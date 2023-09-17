@@ -24,15 +24,15 @@ There are two significant work on improving speed: Instant-NGP, TensorRF; one im
 
 
 ## The list of paper I want to read following:
-TensorRF
-2.Plenoxels
-Plenoctrees
-4.NeRF-SLAM
-5.GIGA
-6.climate-Nerf
-Mip-Nerf
-8.Ref-Nerf
-HDF-plenoxels
+1. TensorRF
+2. Plenoxels
+3. Plenoctrees
+4. NeRF-SLAM
+5.4GIGA
+6. climate-Nerf
+7. Mip-Nerf
+8. Ref-Nerf
+9. HDF-plenoxels
 
 
 
