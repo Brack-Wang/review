@@ -1,3 +1,16 @@
+# TensoRF: Tensorial Radiance Fields
+
+Achieve good quality with speed to reconstruct 3D model from images. It decompose tensors into components through CP/VM. This work is excellent, one for decompose the tensor with components which speed up without CUDA, one for take geometric and appearance feature seperately. This work bases on CP and introduce VM(vector-matrix).
+
+![Screenshot from 2023-09-17 21-44-45](https://github.com/Brack-Wang/review/assets/62454493/ff21e568-b645-4b98-b1b2-4e65ca20d0e9)
+
+It combine geometric and appearance feature together at the end with this equation.
+![Screenshot from 2023-09-17 21-44-34](https://github.com/Brack-Wang/review/assets/62454493/375ebc32-bc9a-4051-8558-0a836ece7eba)
+
+
+
+
+
 # ClimateNeRF: Extreme Weather Synthesis in Neural Radiance Field
 2021/09/17
 
