@@ -1,3 +1,13 @@
+# GIGA: Synergies Between Affordance and Geometry: 6-DoF Grasp Detection via Implicit Representations
+
+This work predict the grasping point and the reconstruct 3D model at the same time. It provide an insight that prediction of grasping point and the reconscturtion are inverse process, whichi is facinating. The work could predict the grapsing point of the objects for the robotic arm with only images. Two main contribution is: decompose the TSDF into 3 feature plane; decompose the feature plane with geometric feature and appearance feature with implicit representation. The main pipeline are following:
+
+![Screenshot from 2023-09-17 21-49-14](https://github.com/Brack-Wang/review/assets/62454493/85851678-e0d2-4a47-b383-d19482b9e4c3)
+
+![GIGA_pip](https://github.com/Brack-Wang/review/assets/62454493/349520c1-3fd8-4aba-87c6-d3fe330c54d3)
+
+
+
 # TensoRF: Tensorial Radiance Fields
 
 Achieve good quality with speed to reconstruct 3D model from images. It decompose tensors into components through CP/VM. This work is excellent, one for decompose the tensor with components which speed up without CUDA, one for take geometric and appearance feature seperately. This work bases on CP and introduce VM(vector-matrix).
