@@ -1,3 +1,9 @@
+# NeRF-SLAM: Real-Time Dense Monocular SLAM with Neural Radiance Fields
+
+This work achieves SLAM with only images as input. It utilizes Detroid-SLAM to predict pose and depth from images, then constructs 3D mesh and basic blurry 3D model by weighting the depths estimated in dense SLAM by marginal covariance, finally generate NeRF under Instant-NGP structure with the prediect pose and depth. This work only use RGB info instead of RGB-D info like Nice-SLAM. It's real-time due to the utilization of Instant-NGP, but require 11 GB GPU memories, which is a common problem in Nerf-based SLAM.
+
+It provide an insight that to reconstruct 3D model through NeRF,  accurate pose estimation or(and) accurate depth would be good enough to generate good model. 
+
 # HDR-Plenoxels: Self-Calibrating High Dynamic Range Radiance Fields
 
 This work is based on Plenoxels, improving the render on HDR images by considering white balance and camera response function(CRF) with its tone mapping.
