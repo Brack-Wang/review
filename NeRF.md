@@ -1,3 +1,11 @@
+# HDR-Plenoxels: Self-Calibrating High Dynamic Range Radiance Fields
+
+This work is based on Plenoxels, improving the render on HDR images by considering white balance and camera response function(CRF) with its tone mapping.
+
+![HDRplenxoel](https://github.com/Brack-Wang/review/assets/62454493/9e621d26-dcce-41d1-a79d-f7be4533a5c2)
+
+
+
 # Plenoxels: Radiance Fields without Neural Networks
 
 This work introduce a method without MLP to reach the similar good quality as original Nerf and faster speed. It presents an insight that the key element of NeRF is not neural network but differential volumetric render. Besides, it emphasize the importance of 3 key elements: a differentiable forward network, a continuous representation, an appropriate regulazation. 
