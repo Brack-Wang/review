@@ -1,3 +1,17 @@
+# Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields
+
+They present two insight of the defeat of NeRF on reflection: [Original Expression since I'm not fully understand]
+
+First, NeRF’s parameterization of the outgoing radiance at each point as a function of the viewing direction is poorly-suited for interpolation. Figure 2 illustrates that, even for a simple toy setup, the scene’s true radiance function varies quickly with view direction, especially around specular highlights.
+
+Second, NeRF tends to “fake” specular reflections using isotropic emitters inside the object instead of view-dependent radiance emitted by points at the surface, resulting in objects with semitransparent or “foggy” shells.
+
+Therefore, they improve the Mip-Nerf by introduction integrated Deirectional Encoding(IDE) considering the roughness and the reflection of the radiance field.
+
+![refnerf](https://github.com/Brack-Wang/review/assets/62454493/57a445b1-e527-4447-9341-917a686d14d1)
+
+Though Ref-Nerf got better result than Mip-Nerf. The written article is kind of blurry, it needs attention to capture the important information and kind of hard to generate a general pipeline of the work.
+
 # PlenOctrees for Real-time Rendering of Neural Radiance Fields
 
 Implementing NeRF through Octree in 3D, achieveing similar quality but 3000 times faster than original NeRF clamed. Researcher achieves faster NeRF by implementing it with different representation like Octree here, hash encoding like Instant NGP, decomposition of VM in TensoRF.
