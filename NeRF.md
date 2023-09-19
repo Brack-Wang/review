@@ -1,3 +1,7 @@
+# Plenoxels: Radiance Fields without Neural Networks
+
+This work introduce a method without MLP to re
+
 # Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields
 
 They present two insight of the defeat of NeRF on reflection: [Original Expression since I'm not fully understand]
