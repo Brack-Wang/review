@@ -1,3 +1,20 @@
+# PlenOctrees for Real-time Rendering of Neural Radiance Fields
+
+Implementing NeRF through Octree in 3D, achieveing similar quality but 3000 times faster than original NeRF clamed. Researcher achieves faster NeRF by implementing it with different representation like Octree here, hash encoding like Instant NGP, decomposition of VM in TensoRF.
+
+![plenoctree](https://github.com/Brack-Wang/review/assets/62454493/acdf5a93-95af-495e-9aa2-b297d8172dc0)
+
+
+
+
+# Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields
+
+NeRF render images from the radiance field along only one ray, which lead to the alias affect. Mip-NeRF got insight from the Mip-mapping, rendering from the cone, introducing Integrated Positional Encoding to replace Positional Encoding, which improve the quality and speed up. Mip-NeRF is a classic work for the following work.
+
+![mipnerf](https://github.com/Brack-Wang/review/assets/62454493/6cb51cda-c06e-46f2-816d-a8cd9289a166)
+
+
+
 # GIGA: Synergies Between Affordance and Geometry: 6-DoF Grasp Detection via Implicit Representations
 
 This work predict the grasping point and the reconstruct 3D model at the same time. It provide an insight that prediction of grasping point and the reconscturtion are inverse process, whichi is facinating. The work could predict the grapsing point of the objects for the robotic arm with only images. Two main contribution is: decompose the TSDF into 3 feature plane; decompose the feature plane with geometric feature and appearance feature with implicit representation. The main pipeline are following:
