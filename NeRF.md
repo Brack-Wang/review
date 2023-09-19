@@ -1,6 +1,10 @@
 # Plenoxels: Radiance Fields without Neural Networks
 
-This work introduce a method without MLP to re
+This work introduce a method without MLP to reach the similar good quality as original Nerf and faster speed. It presents an insight that the key element of NeRF is not neural network but differential volumetric render. Besides, it emphasize the importance of 3 key elements: a differentiable forward network, a continuous representation, an appropriate regulazation. 
+
+This work got insight from PlenOctrees and continue the way of utilizing sparse voxel grid. It might enlighten the Nice-SLAm, which has similar architecture of feature grid. Though It improve the speed, it certainly require much more memory space.
+
+
 
 # Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields
 
