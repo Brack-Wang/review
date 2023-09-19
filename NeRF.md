@@ -5,6 +5,7 @@ This work introduce a method without MLP to reach the similar good quality as or
 This work got insight from PlenOctrees and continue the way of utilizing sparse voxel grid. It might enlighten the Nice-SLAm, which has similar architecture of feature grid. Though It improve the speed, it certainly require much more memory space.
 
 
+![plenoxels](https://github.com/Brack-Wang/review/assets/62454493/6ba0a58c-5b15-4b49-9103-304967e3bb26)
 
 # Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields
 
