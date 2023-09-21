@@ -1,3 +1,16 @@
+
+# EditableNeRF: Editing Topologically Varying Neural Radiance Fields by Key Points
+
+This work make the constructed 3D model editable by detecting key points in canonical space, using weighted key points to model dynimics. training the model under the supervision of input image sequence with the optical and depth inform.
+
+The topic is interesting. It could also faciliate the prediction of unseen place, motion transfer, UI interface. The obstacle is the limitaion of the moving distance.
+
+
+
+![ediablenerf](https://github.com/Brack-Wang/review/assets/62454493/1ed8350c-0321-4adc-a4dc-6323a20960ad)
+
+
+
 # NeRF-SLAM: Real-Time Dense Monocular SLAM with Neural Radiance Fields
 
 This work achieves SLAM with only images as input. It utilizes Detroid-SLAM to predict pose and depth from images, then constructs 3D mesh and basic blurry 3D model by weighting the depths estimated in dense SLAM by marginal covariance, finally generate NeRF under Instant-NGP structure with the prediect pose and depth. This work only use RGB info instead of RGB-D info like Nice-SLAM. It's real-time due to the utilization of Instant-NGP, but require 11 GB GPU memories, which is a common problem in Nerf-based SLAM.
