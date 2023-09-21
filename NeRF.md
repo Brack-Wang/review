@@ -1,3 +1,10 @@
+# DIVeR: Real-time and Accurate Neural Radiance Fields with Deterministic Integration for Volume Rendering
+
+This work utilize deterministric to replace stochastic volume rendering integral, representing the filed as voxel grid with feature vectors, predicting density, color in voxel's vertex and calculate the info of given position through trilinear interpolation. To initialize the feature vectors reasonablely, it utilize MLP to learn the correlation and initialize implicitly, then discard MLP regulation and optimize explicitly. The result is faster, better and more stable compared to original NeRF and cocunrrent works. But the limilation of original Nerf like the unbounded reconstruction, the reflection, aliasing errors remains.
+
+![Screenshot from 2023-09-21 15-11-04](https://github.com/Brack-Wang/review/assets/62454493/e6c4b1ad-48b3-4b72-86f5-448b76350e2c)
+
+
 # NeRFLight: Fast and Light Neural Radiance Fields using a Shared Feature Grid
 
 This work clams to have the fastest FPS with relatively godd quality campared to Instant-NGP, TensoRF, DRIeR. The main concept is to divide the space into 8 grids and learn the shared feature grid in each cube, which will decrease the computation greatly. Then implementing decoder in each smaller specific region to predict the density and so-called intermedieate representation used to predict color with a single color decoder. It introduced a symmetric voxel grid method to smooth the seam since decoders predict density and color seperately. It also introduce the determetric volumn integration which integrate trilinear interpolation into the intervals.
