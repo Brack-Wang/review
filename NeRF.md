@@ -1,4 +1,18 @@
 
+# **NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis**
+
+Take a review of the most important paper: NeRF itself since it contains several classical expression of math to describe the princlple of nerual filed. 1. Sample points X along the ray of the camera; 2. Input the X and D, a 5D and predict the color and density through MLP; 3. accululate along the ray and render the image; optimize with losss of the generated and input image.
+
+![Screenshot from 2023-09-21 14-00-43](https://github.com/Brack-Wang/review/assets/62454493/e45f0ab4-a57c-4859-915a-27c9d36438c4)
+
+The essential principle of rendering is:
+![Screenshot from 2023-09-21 14-00-57](https://github.com/Brack-Wang/review/assets/62454493/460918b5-02e3-4550-819c-5dfd47a3866f)
+
+To implement in decrete:
+![Screenshot from 2023-09-21 14-01-06](https://github.com/Brack-Wang/review/assets/62454493/6aa42589-a86b-47d7-a40d-a74b4c812f1c)
+
+
+
 # EditableNeRF: Editing Topologically Varying Neural Radiance Fields by Key Points
 
 This work make the constructed 3D model editable by detecting key points in canonical space, using weighted key points to model dynimics. training the model under the supervision of input image sequence with the optical and depth inform.
