@@ -1,3 +1,10 @@
+# NeRFLight: Fast and Light Neural Radiance Fields using a Shared Feature Grid
+
+This work clams to have the fastest FPS with relatively godd quality campared to Instant-NGP, TensoRF, DRIeR. The main concept is to divide the space into 8 grids and learn the shared feature grid in each cube, which will decrease the computation greatly. Then implementing decoder in each smaller specific region to predict the density and so-called intermedieate representation used to predict color with a single color decoder. It introduced a symmetric voxel grid method to smooth the seam since decoders predict density and color seperately. It also introduce the determetric volumn integration which integrate trilinear interpolation into the intervals.
+
+![Screenshot from 2023-09-21 14-22-48](https://github.com/Brack-Wang/review/assets/62454493/5afe2342-ca00-4750-b64a-182028542be6)
+
+
 
 # **NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis**
 
