@@ -1,3 +1,10 @@
+# Neural Sparse Voxel Fields
+
+This work utilize voxel grid to help the locate of the semantic position and discard non-info space by self-pruning the grids and predic the density and color in grids. The difference from DIVeR is that it still predict through accumulation while DIVeR utlize trilinear interpolation.
+
+![Screenshot from 2023-09-21 15-45-57](https://github.com/Brack-Wang/review/assets/62454493/2412f40e-c694-46cd-9df2-e99aeae5fdcd)
+
+
 # DIVeR: Real-time and Accurate Neural Radiance Fields with Deterministic Integration for Volume Rendering
 
 This work utilize deterministric to replace stochastic volume rendering integral, representing the filed as voxel grid with feature vectors, predicting density, color in voxel's vertex and calculate the info of given position through trilinear interpolation. To initialize the feature vectors reasonablely, it utilize MLP to learn the correlation and initialize implicitly, then discard MLP regulation and optimize explicitly. The result is faster, better and more stable compared to original NeRF and cocunrrent works. But the limilation of original Nerf like the unbounded reconstruction, the reflection, aliasing errors remains.
