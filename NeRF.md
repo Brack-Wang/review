@@ -1,3 +1,12 @@
+# NeRFactor: Neural Factorization of Shape and Reflectance Under an Unknown Illumination
+
+This work factorize the 3D neural field into surface normals, light visibility, albedo, and Bidirectional Reflectance Distribution Functions (BRDFs) without any supervision. This work has a similar idea of Anand work.
+
+![Screenshot from 2023-09-22 14-39-57](https://github.com/Brack-Wang/review/assets/62454493/a2d77727-4b71-4adf-b408-2951938234ee)
+
+
+
+
 # ReLight My NeRF: A Dataset for Novel View Synthesis and Relighting of Real World Objects
 
 This work is enlighting that It provide a dataset for relightable nerf, summury related works before, provides a benchmark of relightable NeRF. I will utilize its dataset and follow its work.
