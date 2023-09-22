@@ -1,3 +1,15 @@
+# ReLight My NeRF: A Dataset for Novel View Synthesis and Relighting of Real World Objects
+
+This work is enlighting that It provide a dataset for relightable nerf, summury related works before, provides a benchmark of relightable NeRF. I will utilize its dataset and follow its work.
+
+There is an insight that providing the relative position of the light is much better than providing a absolute position.
+
+![Screenshot from 2023-09-22 13-45-28](https://github.com/Brack-Wang/review/assets/62454493/df7e3e1d-2be7-4dde-a2da-545a7dd9f092)
+
+![Screenshot from 2023-09-22 13-45-37](https://github.com/Brack-Wang/review/assets/62454493/f3805c8a-c908-464a-af5f-a95de9ac0cf0)
+
+
+
 # EfficientNeRF: Efficient Neural Radiance Fields
 
 This work also want to delete unuseful information like NSVF but it first use valid sampling to refine the density in voxel and get the weights, then utilize pivot sampling to predict color focusing on voxels with higher weights. It aslo introduce a NeRFtree to store results more effeciently. The limitation inferred in the article is the generalization ability, trainning from scratch to new scenes.
