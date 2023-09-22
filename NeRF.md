@@ -1,3 +1,11 @@
+
+# FreeNeRF: Improving Few-shot Neural Rendering with Free Frequency Regularization
+
+This work add only one line of code to improve the quality of NeRF with few shots dramtically, based on the observations that 1. over-fast converge on high-frequency mapping lead to the missing of low-frequency info, therefore it introduce Frequency Regularization which use a linearly increasing frequency mask to regulate the visible frequency spectrum; 2. solid floater close the camera, therefore it introduce occlusion reularization. It's beautiful since it discover problem in details and improve it with simplicity.
+![Screenshot from 2023-09-22 15-27-14](https://github.com/Brack-Wang/review/assets/62454493/01c5331d-da74-4885-9c3d-2a7637cf346b)
+
+
+
 # NeRFactor: Neural Factorization of Shape and Reflectance Under an Unknown Illumination
 
 This work factorize the 3D neural field into surface normals, light visibility, albedo, and Bidirectional Reflectance Distribution Functions (BRDFs) without any supervision. This work has a similar idea of Anand work.
