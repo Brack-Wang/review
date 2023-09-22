@@ -1,6 +1,16 @@
+# EfficientNeRF: Efficient Neural Radiance Fields
+
+This work also want to delete unuseful information like NSVF but it first use valid sampling to refine the density in voxel and get the weights, then utilize pivot sampling to predict color focusing on voxels with higher weights. It aslo introduce a NeRFtree to store results more effeciently. The limitation inferred in the article is the generalization ability, trainning from scratch to new scenes.
+
+![Screenshot from 2023-09-22 09-36-49](https://github.com/Brack-Wang/review/assets/62454493/247624cf-c25a-47cf-bf45-b4d57d46a36a)
+
+![Screenshot from 2023-09-22 09-41-14](https://github.com/Brack-Wang/review/assets/62454493/769086ad-cdf3-4cba-862d-21dd187ea988)
+
+
+
 # Neural Sparse Voxel Fields
 
-This work utilize voxel grid to help the locate of the semantic position and discard non-info space by self-pruning the grids and predic the density and color in grids. The difference from DIVeR is that it still predict through accumulation while DIVeR utlize trilinear interpolation.
+This work utilize voxel grid to help the locate of the semantic position and discard non-info space by self-pruning the grids and predic the density and color in grids. It gradually delete voxels without any inform to speed up. The difference from DIVeR is that it still predict through accumulation while DIVeR utlize trilinear interpolation.
 
 ![Screenshot from 2023-09-21 15-45-57](https://github.com/Brack-Wang/review/assets/62454493/2412f40e-c694-46cd-9df2-e99aeae5fdcd)
 
