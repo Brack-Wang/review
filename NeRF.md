@@ -1,3 +1,8 @@
+# F2-NeRF: Fast Neural Radiance Field Training with Free Camera Trajectories
+
+This work divide the works of NeRF into 2 main sections: forward-fronting and 360 centered. Situation beyond these two situations are free trajectories, which is explored little. It provide an insight that the assignment of computation resource on the neural filed is not reasonable. Space close to the camera and the far to the camera should got the similar resource instead of the farther the more. Therefore it transform the 3D space into warping space through proposed perspective warping. It utilize pCA to estimate the transformation. To calculate efficently, it imporved the hash map of instant-ngp and store the subdivided region with octree.
+![Screenshot from 2023-09-23 13-57-30](https://github.com/Brack-Wang/review/assets/62454493/afc3a890-5571-466b-a5f6-4324c53ca003)
+
 
 # FreeNeRF: Improving Few-shot Neural Rendering with Free Frequency Regularization
 
