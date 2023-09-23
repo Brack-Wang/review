@@ -1,3 +1,12 @@
+# DETR3D: 3D Object Detection from Multi-view Images via 3D-to-2D Queries
+
+This work implement transformer to predict 3D object deirectly from multi-images instead of generating point cloud or estimating depth. Furthermore, with the pipeline of top-to-down, it discard the comsuming NMS post procssing. It first proposed M object quries and predict reference points in 3D space with MLP, then map reference points to different layers of feature images, finally map back with muiti-head attention to refine object quries.
+
+Prof Yue Wang is AP in USC, expected to get in touch.
+![Screenshot from 2023-09-23 15-53-06](https://github.com/Brack-Wang/review/assets/62454493/55f1b0ab-a596-4d7a-b176-10a99ce437e8)
+
+
+
 # PersonNeRF : Personalized Reconstruction from Photo Collections
 
 This work is interesting and promising: Giving a short video and construct the human in 3D. The work is based on his previous work named HumanNerf and solve the problem on non-rigid motion and human geometry. It replace non-rigid model with the skeleton model; enforce the depth smooth; train the appearance and motion in single network.
